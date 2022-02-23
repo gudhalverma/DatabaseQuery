@@ -1,0 +1,17 @@
+1.select * from employee_Detail where first_name like '[^a-p]%';
+2.select * from employee_Detail where gender like '__le';
+3.select * from employee_Detail where first_name like 'A____';
+4.select * from employee_Detail where first_name like '%[%]%'
+5.select DISTINCT(department) from employee_Detail;
+6.select MAX(salary)as MaxSalary from employee_Detail;
+7.select CONVERT(varchar(20),joing_date,106)from employee_Detail;
+8.select CONVERT(varchar(20),joing_date,111)from employee_Detail;
+9.select CONVERT(varchar(20),joing_date,108)from employee_Detail;
+10.select YEAR( joing_date) from employee_Detail;
+11.select first_name as Name,joing_date as joining_date ,CURRENT_TIMESTAMP   from employee_Detail;
+12.select joing_date,CURRENT_TIMESTAMP,DATEDIFF(MONTH, Joing_date, GETDATE()) as date from employee_Detail;
+13.select *from employee_Detail where  YEAR( joing_date)=2013;
+14.select * from employee_Detail where MONTH(joing_date)=1;
+15.select * from employee_Detail where joing_date between '2013-01-01' and '2013-12-01';
+16.select first_name,case when gender ='Male' then'M' when gender='Female' then 'F' else 'other'  end from employee_Detail ;
+
